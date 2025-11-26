@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    background-image: url("../images/blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(85px);
+    padding: 5% 5%;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.137);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.486);
+    padding: 1.7%;
+}
+
+a, p, h1, h2, h3, button, input{
+    font-family: "Comic Relief", system-ui;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 51px;
+}
+
+header > .left{
+    width: 23%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    padding: 0 20px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.144);
+}
+
+.search > p{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+header > .right{
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header > .right > nav{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+
+header > .right > nav > a{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    border: 1.5px solid transparent;
+}
+
+header > .right > nav > .active{
+    background-color: rgba(255, 255, 255, 0.09) ;
+    backdrop-filter: blur(4px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.144);
+}
+
+header > .right > nav > a:hover{
+    background-color: rgba(255, 255, 255, 0.1) ;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.144);
+}
+
+.notifications{
+    width: 51px;
+    height: 51px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.09) ;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifications:hover{
+    border: 1.5px solid rgba(255, 255, 255, 0.288);
+}
+
+.notifications > .fa-bell{
+    color: white;
+    font-size: 18px;
+}
+
+header > .right >.user{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.09) ;
+    backdrop-filter: blur(10px);
+    width: 18%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 8px;
+}
+
+header > .right > .user > img{
+    height: 75%;
+    border-radius: 100px;
+}
+
+.nick-cont{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nick-cont > .nick{
+    margin: 0;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.nick-cont > .tag{
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0;
+    color: rgb(235, 235, 235);
+}
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth-buttons a {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.login-btn {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.login-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.signup-btn {
+    background: #ff5c5c;
+    color: white;
+}
+
+.signup-btn:hover {
+    background: #ff3d3d;
+}

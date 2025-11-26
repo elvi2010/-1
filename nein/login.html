@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Кинопоиск</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/e90359793d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+
+    <div class="login-glass">
+        <h1>Добро пожаловать</h1>
+        <p class="subtitle">Войдите в свой аккаунт</p>
+
+        <form action="home.html" method="get">
+            <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Имя пользователя" required>
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Пароль" required>
+            </div>
+
+            <button type="submit" class="login-btn">
+                <i class="fa-solid fa-right-to-bracket"></i> Войти
+            </button>
+
+            <p class="register">Нет аккаунта? <a href="#">Создать</a></p>
+        </form>
+    </div>
+</body>
+</html>
